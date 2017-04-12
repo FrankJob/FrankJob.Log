@@ -1,6 +1,7 @@
 # FrankJob.Log
 
-FrankJob.Log is a .NET library that creates a new log level for [log4net](https://logging.apache.org/log4net/) and uses [Newtonsoft Json.NET](https://github.com/JamesNK/Newtonsoft.Json) to serialize log data in json format.
+FrankJob.Log is a library that provides a new log level for [log4net](https://logging.apache.org/log4net/), where it's possible to write the application execution stack (stacktrace), the HttpContext object, Exceptions, execution information as the Method that was called or the Controller/Action and still write entire objects of your application to check the values passed by the user.
+This information is serialized using [Newtonsoft Json.NET](https://github.com/JamesNK/Newtonsoft.Json) in json format.
 
 ## Code Example
 Configure your log4net environment and add a new log appender like this:
