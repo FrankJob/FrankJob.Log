@@ -61,40 +61,40 @@ And consuming from any method as listed above:
     
 The result is a Log with a json content of objects and enviroment variables:
 
-STACK 2017-04-11 20:13:06,138 - {
-  "DateTime": {
-    "Date": "2017-4-11",
-    "Time": "20:13:4:192",
-    "DST": false
-  },
-  "Message": "Trace!",
-  "Method": "Main",
-  "Namespace": "LogWithoutHttp.Program",
-  "User": "lenovo-jr\\franc",
-  "UserObjects": {
-    "Object[]": [
-      {
-        "name": "Beth",
-        "age": 41,
-        "bornDate": "2017-04-11T20:13:04.1039911-03:00"
+    STACK 2017-04-11 20:13:06,138 - {
+      "DateTime": {
+        "Date": "2017-4-11",
+        "Time": "20:13:4:192",
+        "DST": false
+      },
+      "Message": "Trace!",
+      "Method": "Main",
+      "Namespace": "LogWithoutHttp.Program",
+      "User": "lenovo-jr\\franc",
+      "UserObjects": {
+        "Object[]": [
+          {
+            "name": "Beth",
+            "age": 41,
+            "bornDate": "2017-04-11T20:13:04.1039911-03:00"
+          }
+        ]
+      },
+      "Exception": {
+        "ClassName": "System.NotImplementedException",
+        "Message": "erro exemplo",
+        "Data": null,
+        "InnerException": null,
+        "HelpURL": null,
+        "StackTraceString": null,
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2147467263,
+        "Source": null,
+        "WatsonBuckets": null
       }
-    ]
-  },
-  "Exception": {
-    "ClassName": "System.NotImplementedException",
-    "Message": "erro exemplo",
-    "Data": null,
-    "InnerException": null,
-    "HelpURL": null,
-    "StackTraceString": null,
-    "RemoteStackTraceString": null,
-    "RemoteStackIndex": 0,
-    "ExceptionMethod": null,
-    "HResult": -2147467263,
-    "Source": null,
-    "WatsonBuckets": null
-  }
-}
+    }
 
 ## Motivation
 
@@ -103,9 +103,9 @@ The motivation is to facilitate the adoption of logs by all in an efficient way.
 
 ## Installation
 
-Well all you basically have to do is install the [FrankJob](https://www.nuget.org/packages/FrankJob/) NuGet package:
+Well all you basically have to do is install the [FrankJob.Log](https://www.nuget.org/packages/FrankJob.Log) NuGet package:
 
-`PM> Install-Package FrankJob`
+`PM> Install-Package FrankJob.Log`
 
 For more information about usage, please view Code Example part.
 
@@ -121,7 +121,7 @@ This library would be NOTHING without its [contributors](https://github.com/Fran
 
 ## Copyright
 
-Copyright © 2017 Francisco C. de S. Junior & [Contributors](https://github.com/FrankJob/FrankJob.Log/graphs/contributors)
+Copyright Â© 2017 Francisco C. de S. Junior & [Contributors](https://github.com/FrankJob/FrankJob.Log/graphs/contributors)
 
 ## License
 
