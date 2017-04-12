@@ -64,6 +64,7 @@
     <Compile Include="UserConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="FrankJob.Log.nuspec" />
     <None Include="FrankJob.Log.pfx" />
     <None Include="FrankJobLogPublicPrivateKeyFile.snk" />
     <None Include="packages.config" />
