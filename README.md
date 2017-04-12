@@ -27,28 +27,28 @@ And add a new logger like this:
 
 Customize your log content with AppSettings on Web.Config:
 
-  <appSettings>
-    <!-- enable stack log -->
-    <add key="FrankJob.Log.EnableStackLog" value="false" />
-    <!-- show all properties fields of object -->
-    <add key="FrankJob.Log.ShowDefaultPropertiesValue" value="false" />
-    <!-- Indent json log -->
-    <add key="FrankJob.Log.JsonIndented" value="true" />
-    <!-- put domain\user1; domain\user2 format to monitor a user. No value monitor all users -->
-    <add key="FrankJob.Log.UsersToMonitor" value="" />
-    <!-- override the configuration when monitor a specific user and enable all log properties fields -->
-    <add key="FrankJob.Log.EnableAllSettingsInUsersToMonitor" value="false" />
-    <!-- enable log of HttpContext object -->
-    <add key="FrankJob.Log.EnableHttpContext" value="false" />
-    <!-- ignore parts of HttpContext object like Cache; Current -->
-    <add key="FrankJob.Log.HttpContextPropertiesIgnore" value="" />
-    <!-- enable stacktrace of log execution -->
-    <add key="FrankJob.Log.EnableStackTrace" value="false" />
-    <!-- log stacktrace with file columns and rows or all stack -->
-    <add key="FrankJob.Log.StackTraceWithoutNumbers" value="false" />
-    <!-- enable Server Variables log -->
-    <add key="FrankJob.Log.EnableServerVariables" value="false" />
-  </appSettings>
+      <appSettings>
+        <!-- enable stack log -->
+        <add key="FrankJob.Log.EnableStackLog" value="false" />
+        <!-- show all properties fields of object -->
+        <add key="FrankJob.Log.ShowDefaultPropertiesValue" value="false" />
+        <!-- Indent json log -->
+        <add key="FrankJob.Log.JsonIndented" value="true" />
+        <!-- put domain\user1; domain\user2 format to monitor a user. No value monitor all users -->
+        <add key="FrankJob.Log.UsersToMonitor" value="" />
+        <!-- override the configuration when monitor a specific user and enable all log properties fields -->
+        <add key="FrankJob.Log.EnableAllSettingsInUsersToMonitor" value="false" />
+        <!-- enable log of HttpContext object -->
+        <add key="FrankJob.Log.EnableHttpContext" value="false" />
+        <!-- ignore parts of HttpContext object like Cache; Current -->
+        <add key="FrankJob.Log.HttpContextPropertiesIgnore" value="" />
+        <!-- enable stacktrace of log execution -->
+        <add key="FrankJob.Log.EnableStackTrace" value="false" />
+        <!-- log stacktrace with file columns and rows or all stack -->
+        <add key="FrankJob.Log.StackTraceWithoutNumbers" value="false" />
+        <!-- enable Server Variables log -->
+        <add key="FrankJob.Log.EnableServerVariables" value="false" />
+      </appSettings>
 
 Using a custom log creator to return an ILog interface from log4net in your page or global.asax like this:
 
